@@ -1,0 +1,85 @@
+
+/* basic grammar & class, id */
+
+body { background-color: powderblue; 
+    text-align: center;}
+
+h1 { color: darkblue; }
+
+p { color: cornflowerblue; }
+
+.para { color : green; }
+
+/* div & span study */
+
+div {
+    background-color: black;
+    color : white;
+    padding : 20px; 
+    }
+
+span {
+    color : red;
+}
+
+/* link study */
+
+a:link {
+    background-color: #f44336;
+    color:  white;
+    text-align: center;
+    text-decoration: none;
+    display : inline-block;
+}
+
+a:hover {
+    background-color: cyan;
+}
+
+/* list study */
+
+ul {
+    list-style-type: none;
+    background: #3399ff;
+    padding : 20px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+
+/* Layout study */
+
+body { margin : 0; }
+
+.header {
+    background-color: coral;
+    padding : 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: forestgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+.topnav {
+    overflow : hidden;
+    background-color: #333;
+    padding : 14px;
+}
+
+.topnav a {
+    display: inline;
+    color: darkolivegreen;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav hover {
+    background-color: burlywood;
+    color : black;
+}

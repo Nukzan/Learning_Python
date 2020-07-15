@@ -22,10 +22,13 @@ def Deeplearning(first, second):
     result = my_model.predict([param])
     return result
 
-# def XORwithKeras(first, second):
-#     new_model = tf.keras.models.load_model('hello/XORwithKeras.h5')
-#     param = [int(first), int(second)]
-#     result = new_model.predict([param])
-#     return result
+def template(request):
+    return render(request, 'hello/template.html')
+
+def XORwithKeras(first, second):
+    new_model = tf.keras.models.load_model('hello/XORwithKeras.h5')
+    param = [int(first), int(second)]
+    result = new_model.predict([param])
+    return result
 
 
