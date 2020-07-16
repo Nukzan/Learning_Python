@@ -2,7 +2,7 @@
 {% load static %}
 <html>
     <head>
-		<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,9 +17,9 @@
 			<link rel = 'stylesheet' href = '{% static "hello/w3.css" %}'>
     </head>
     <body>
-		<form class="w3-container" action="/hello/"></form>
 		<p class = 'greeting'> Hello, This is my website </p>
-		<button class = 'w3-button w3-black'><a href = '/hello/form'> Give me a Advice!</a></button>
+		<p> this is the data gathered </p>
+		<p> {{rows}} </p>
 		</form>
 	</body>
 </html>

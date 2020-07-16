@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hello',
     'organization',
+    'dbmanage',
+    'background_task',
 ]
 
 MIDDLEWARE = [

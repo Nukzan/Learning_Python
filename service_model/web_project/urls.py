@@ -22,6 +22,7 @@ urlpatterns = [
     path('hello/', include('hello.urls')),
     path('myhello/', include('myhello.urls')),
     path('organization/', include('organization.urls')),
+    path('dbmanage/', include('dbmanage.urls')),
     ]
 
 

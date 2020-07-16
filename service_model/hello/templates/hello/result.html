@@ -17,9 +17,12 @@
 			<link rel = 'stylesheet' href = '{% static "hello/w3.css" %}'>
     </head>
     <body>
-		<form class="w3-container" action="/hello/"></form>
-		<p class = 'greeting'> Hello, This is my website </p>
-		<button class = 'w3-button w3-black'><a href = '/hello/form'> Give me a Advice!</a></button>
+		<h1> Thanks for your sharing! </h1>
+        <p> 
+            Your advice was : {{message}} </br>
+            We might send you message for more infos. </br>
+            You put your phone number as {{telNo}}
+        </p>
 		</form>
 	</body>
 </html>
