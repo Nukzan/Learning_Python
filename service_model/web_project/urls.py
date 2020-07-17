@@ -25,4 +25,7 @@ urlpatterns = [
     path('dbmanage/', include('dbmanage.urls')),
     ]
 
-
+from crawling.crawling_tasks import task_hello  # 호출하는 부분
+task_hello()
+from crawling.crawling_tasks import task_crawling_daum  # 호출하는 부분
+task_crawling_daum()

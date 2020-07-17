@@ -1,0 +1,46 @@
+
+<html>
+	<head>
+        <script>
+                function myFunction() {
+                        document.getElementById('demo').innerHTML = 'Para changed'
+                }
+		function validationform(){
+			var name = document.myform.name.value;
+			var password = document.myform.password.value;
+			if (name == null || name == ''){
+				var strvalidation = 'Name cannot be blank.';
+				document.getElementById('nmerr').innerHTML = strvalidation;
+				return false;
+			}
+			if (password.length < 6 || password == '' || password == null){
+                var pswvalidation = 'Password must be at least 6 characters long.'
+                document.getElementById('pwderr').innerHTML = pswvalidation;
+				return false;
+			}
+			return true;
+		}
+	</script>
+	</head>
+	<body>
+		<div>
+			<h1 id = 'demo'></h1>	<!-- the element of this line change by beneath script -->
+			<h2> Javascript in Body </h2>
+			<p id = 'demo'> this is demo paragraph </p>	<!-- eventhough the id is demo, the HTML element doesn't change -->
+			<button id = 'new' type = 'button' onclick = 'myFunction()'>Try It</button>
+		</div>
+	
+		<div id = 'onsubmit'>
+			<span id = 'nmerr'></span><br>
+			<span id = 'pwderr'></span><br>
+			<form name = 'myform' action = '/login' onsubmit = 'return validationform()'>
+				Name : <input type = 'text' name = 'name'><br>
+				Password : <input type = 'password' name = 'password'><br>
+				<input type = 'submit' value = 'login'>
+			</form>
+		</div>
+	<script>
+                document.getElementById('demo').innerHTML = '1st JS'
+        </script> 
+	</body>
+</html>
