@@ -4,6 +4,7 @@ urlpatterns = [
         path("", views.home, name = "hello-home"),
         path("form/", views.form, name = "form"),
         path("result/", views.result, name = "result"),
+        path("simpleapi/", views.simpleapi, name = "simpleapi"),
         # path("template/", views.template, name = "template"),
         # path("templatefromsite/", views.templatefromsite),
         # path("bootstrapTemp/", views.bootstrapTemp),

@@ -26,6 +26,7 @@ urlpatterns = [
     ]
 
 from crawling.crawling_tasks import task_hello  # 호출하는 부분
-task_hello()
+task_hello(schedule = 60, repeat = 60*2)
+
 from crawling.crawling_tasks import task_crawling_daum  # 호출하는 부분
-task_crawling_daum()
+task_crawling_daum(schedule = 60, repeat = 60*2)
